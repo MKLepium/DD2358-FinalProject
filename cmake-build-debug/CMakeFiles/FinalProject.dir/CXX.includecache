@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mk/HPC/FinalProject/ray_tracing_module.cpp
+cmath
+-
+algorithm
+-
+iostream
+-
+numeric
+-
+vector
+-
+iostream
+-
+
