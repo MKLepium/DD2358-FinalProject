@@ -80,7 +80,6 @@ def run(w, h):
             if col is None:
                 continue
             img[h - j - 1, i, :] = np.clip(col, 0, 1)
-    print(img)
     return img
 
 
@@ -90,8 +89,8 @@ def main():
     import raytracer
     times_run = []
     times_cpp = []
-    ws = [5,20,100]
-    hs = [5,20,100]
+    ws = [5,20,100, 500, 1000, 2000, 5000, 10000]
+    hs = [5,20,100, 500, 1000, 2000, 5000, 10000]
     for w, h in zip(ws, hs):
         start = time.time()
         img = run(w, h)
